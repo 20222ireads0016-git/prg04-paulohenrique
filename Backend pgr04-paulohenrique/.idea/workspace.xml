@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e81157b-69fb-4a05-bc7e-d43834db3a52" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/../Backend/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/br/com/ifba/pgr04paulohenrique/Pgr04PaulohenriqueApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/test/java/br/com/ifba/pgr04paulohenrique/Pgr04PaulohenriqueApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/target/classes/br/com/ifba/pgr04paulohenrique/Pgr04PaulohenriqueApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/Pgr04PaulohenriqueApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/Pgr04PaulohenriqueApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +83,7 @@
       <workItem from="1774146179486" duration="106000" />
       <workItem from="1774146338568" duration="165000" />
       <workItem from="1774318926811" duration="31000" />
+      <workItem from="1774320702439" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
