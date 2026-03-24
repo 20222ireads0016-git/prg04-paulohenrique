@@ -28,3 +28,20 @@ O Sincra é um maestro da rotina do usuário, que com o auxlio de Inteligencia A
 
 Estrutura do Projeto:
 
+O projeto está dividido em 2 pastas principais (Frontend, Backend).
+
+Frontend: A pasta frontend possui toda a estrutura HTML, CSS, JavaScript do projeto.
+
+Subpastas de Frontend:
+
+infraestructure - Contém a base do site e arquivos globais;
+
+assets - Estilos (CSS), fontes, imagens e scripts (JS);
+
+pages - Páginas base, como a página inicial (index.html);
+
+usuario - Módulo dedicado às funcionalidades do usuário (Organizando em subpastas);
+
+components - Destinado a elementos de interface reutilizáveis (botões, cabeçalhos, rodapés) [Lembrar de questionar ao professor se essa pasta não deveria estar em Infraestructure...].
+
+Backend: A pasta backend possui toda a estrutura do JAVA, já configurado o Spring bot, mavem, e temporariamente conectado a um banco de dados Postgre temporário.
