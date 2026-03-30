@@ -1,0 +1,39 @@
+#id1 {
+    /*Fundo*/
+    background-color: #1A1A1A;
+}
+
+#id2 {
+    /*Cards/Menus*/
+    background-color: #2D2D2D;
+}
+
+#id3 {
+    /*Destaque Principal*/
+    background-color: #FF8C42;
+}
+
+#id4 {
+    /*Destaque Secundário*/
+    background-color: #A3B18A;
+}
+
+#id5 {
+    /*Texto*/
+    background-color: #F5F5F5;
+}
+
+.expositor{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.expositor div{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
