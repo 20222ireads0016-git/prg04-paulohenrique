@@ -114,11 +114,57 @@ a#login{
     align-items: center;
 }
 
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-u01j{background-color:#34cdf9;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-x6qq{background-color:#dae8fc;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-c6of{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:top}
+.tg  {
+    border-collapse:collapse;border-spacing:0;
+    margin-top: 50px;
+}
+
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg .tg-u01j{
+    background-color:#34cdf9;
+    border-color:inherit;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-x6qq{
+    background-color:#dae8fc;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-c6of{
+    background-color:#ffffff;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+img.tabela {
+    width: 15px;
+    margin: 0px 10px;
+}
