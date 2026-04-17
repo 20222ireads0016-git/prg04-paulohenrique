@@ -15,18 +15,19 @@ body {
     align-items: center;
 }
 
-h1 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
-}
-
 p {
     max-width: 600px;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 25px;
 }
 
 header {
@@ -167,4 +168,26 @@ a#login{
 img.tabela {
     width: 15px;
     margin: 0px 10px;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 40px;
+    }
 }
