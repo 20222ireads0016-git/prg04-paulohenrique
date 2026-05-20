@@ -1,0 +1,52 @@
+package br.com.ifba.pgr04paulohenrique.user.controller;
+
+import br.com.ifba.pgr04paulohenrique.user.User;
+import br.com.ifba.pgr04paulohenrique.user.service.UserIService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import tools.jackson.databind.ObjectMapper;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("api/users")
+@RequiredArgsConstructor
+public class UserController implements UserIController {
+
+    private final UserIService userService;
+    private final ObjectMapper objectMapper;
+
+    @Override
+    @PostMapping(path = "/createNewUser", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> createNewUser(@RequestBody User user){
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.createNewUser(user));
+    }
+
+    @Override
+    @GetMapping(path = "/findUserById/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> findUserById(@PathVariable("id") int id){
+        return ResponseEntity.ok(userService.findUserById(id));
+    }
+
+    @Override
+    @GetMapping(path = "/findAllUsers", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<User>> findAllUsers(){
+        return ResponseEntity.ok(userService.findAllUsers());
+    }
+
+    @Override
+    @PutMapping(path = "/updateUser/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> updateUser(@PathVariable("id") int id){
+        return ResponseEntity.ok(userService.updateUser(id));
+    }
+
+    @Override
+    @DeleteMapping(path = "/deleteUser/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Void> deleteUser(@PathVariable("id") int id){
+        userService.deleteUser(id);
+        return ResponseEntity.ok().build();
+    }
+}
