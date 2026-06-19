@@ -1,6 +1,7 @@
 package br.com.ifba.pgr04paulohenrique.user.service;
 
-import br.com.ifba.pgr04paulohenrique.user.User;
+import br.com.ifba.pgr04paulohenrique.infraestructure.exception.BusinessException;
+import br.com.ifba.pgr04paulohenrique.user.entity.User;
 import br.com.ifba.pgr04paulohenrique.user.repository.UserIRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ public class UserService implements UserIService {
 
     @Override
     public User findUserById(int id){
-        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
+        return userRepository.findById(id).orElseThrow(() -> new BusinessException("Usuário não encontrado com o ID: " + id));
     }
 
     @Override

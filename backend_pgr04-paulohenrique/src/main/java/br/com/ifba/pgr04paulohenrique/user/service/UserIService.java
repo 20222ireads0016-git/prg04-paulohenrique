@@ -1,6 +1,6 @@
 package br.com.ifba.pgr04paulohenrique.user.service;
 
-import br.com.ifba.pgr04paulohenrique.user.User;
+import br.com.ifba.pgr04paulohenrique.user.entity.User;
 import java.util.List;
 
 

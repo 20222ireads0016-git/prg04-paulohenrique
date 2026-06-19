@@ -1,7 +1,6 @@
-package br.com.ifba.pgr04paulohenrique.user;
+package br.com.ifba.pgr04paulohenrique.user.entity;
 
-import br.com.ifba.pgr04paulohenrique.infraestructure.PersistenceEntity;
-import br.com.ifba.pgr04paulohenrique.user.User;
+import br.com.ifba.pgr04paulohenrique.infraestructure.entity.PersistenceEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
@@ -18,7 +17,6 @@ public class User extends PersistenceEntity {
     private String username;
 
     @Column (nullable = false)
-    @JsonIgnore
     private String password;
 
     @Column (name = "nome_completo", nullable = false)

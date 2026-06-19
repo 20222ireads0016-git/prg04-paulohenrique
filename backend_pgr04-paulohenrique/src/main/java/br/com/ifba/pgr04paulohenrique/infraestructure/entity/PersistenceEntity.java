@@ -1,4 +1,4 @@
-package br.com.ifba.pgr04paulohenrique.infraestructure;
+package br.com.ifba.pgr04paulohenrique.infraestructure.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
