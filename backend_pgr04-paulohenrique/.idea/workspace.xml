@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e81157b-69fb-4a05-bc7e-d43834db3a52" name="Changes" comment="Adicionando praticamente tudo do backend de user">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/mapper/ModelMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/mapper/ObjectMapperUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserGetRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.java" afterDir="false" />
+    <list default="true" id="8e81157b-69fb-4a05-bc7e-d43834db3a52" name="Changes" comment="Adicionando ExceptionHandler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/PersistenceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserIService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserService.java" afterDir="false" />
     </list>
@@ -71,7 +63,9 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;Spring Boot.Pgr04PaulohenriqueApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/IFBA/WEB/pgr04-paulohenrique/backend_pgr04-paulohenrique&quot;,
@@ -98,8 +92,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.54" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.54" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
       </set>
     </attachedChunks>
   </component>
@@ -123,7 +117,14 @@
       <workItem from="1779243218241" duration="78000" />
       <workItem from="1779750028652" duration="2474000" />
       <workItem from="1781831176948" duration="56000" />
-      <workItem from="1781831307453" duration="3852000" />
+      <workItem from="1781831307453" duration="4015000" />
+      <workItem from="1781843334429" duration="2761000" />
+      <workItem from="1781850592159" duration="60000" />
+      <workItem from="1781886479219" duration="8000" />
+      <workItem from="1781887016228" duration="452000" />
+      <workItem from="1781891031103" duration="912000" />
+      <workItem from="1781912602434" duration="20000" />
+      <workItem from="1781963789458" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -141,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779243287514</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adicionando ExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1781835325041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781835325041</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adicionando ExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1781835348253</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781835348253</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adicionando praticamente tudo do backend de user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando praticamente tudo do backend de user" />
+    <MESSAGE value="Adicionando ExceptionHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando ExceptionHandler" />
   </component>
 </project>

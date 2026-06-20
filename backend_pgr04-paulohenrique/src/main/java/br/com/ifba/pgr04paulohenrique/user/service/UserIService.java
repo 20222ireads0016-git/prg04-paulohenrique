@@ -9,7 +9,7 @@ public interface UserIService {
     public User createNewUser(User user);
     public User findUserById(int id);
     public List<User> findAllUsers();
-    public User updateUser(int id);
+    public User updateUser(int id, User updatedUser);
     public void deleteUser(int id);
 
 }

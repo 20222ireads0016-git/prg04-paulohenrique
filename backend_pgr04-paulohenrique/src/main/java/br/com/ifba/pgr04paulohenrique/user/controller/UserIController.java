@@ -11,7 +11,7 @@ public interface UserIController {
     public ResponseEntity<User> createNewUser(User user);
     public ResponseEntity<User> findUserById(int id);
     public ResponseEntity<List<UserGetRequestDto>> findAllUsers();
-    public ResponseEntity<User> updateUser(int id);
+    public ResponseEntity<User> updateUser(int id, User user);
     public ResponseEntity<Void> deleteUser(int id);
 
 }

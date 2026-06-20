@@ -4,6 +4,7 @@ import br.com.ifba.pgr04paulohenrique.user.dto.UserGetRequestDto;
 import br.com.ifba.pgr04paulohenrique.user.entity.User;
 import br.com.ifba.pgr04paulohenrique.user.service.UserIService;
 import br.com.ifba.pgr04paulohenrique.infraestructure.mapper.ObjectMapperUtil;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -29,7 +30,7 @@ public class UserController implements UserIController {
 
     @Override
     @PostMapping(path = "/createNewUser", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<User> createNewUser(@RequestBody User user){
+    public ResponseEntity<User> createNewUser(@Valid @RequestBody User user){
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.createNewUser(user));
     }
 
@@ -47,8 +48,8 @@ public class UserController implements UserIController {
 
     @Override
     @PutMapping(path = "/updateUser/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<User> updateUser(@PathVariable("id") int id){
-        return ResponseEntity.ok(userService.updateUser(id));
+    public ResponseEntity<User> updateUser(@PathVariable("id") int id, @Valid @RequestBody User user){
+        return ResponseEntity.ok(userService.updateUser(id, user));
     }
 
     @Override

@@ -19,10 +19,10 @@ public abstract class PersistenceEntity {
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime dataCriacao;
+    private LocalDateTime creationDate;
 
     @UpdateTimestamp
     @Column(name = "updated_at")
-    private LocalDateTime dataAtualizacao;
+    private LocalDateTime updadeDate;
 
 }
