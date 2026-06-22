@@ -1,5 +1,6 @@
 package br.com.ifba.pgr04paulohenrique.user.controller;
 
+import br.com.ifba.pgr04paulohenrique.user.dto.LoginPostRequestDto;
 import br.com.ifba.pgr04paulohenrique.user.dto.UserGetRequestDto;
 import br.com.ifba.pgr04paulohenrique.user.entity.User;
 import br.com.ifba.pgr04paulohenrique.user.service.UserIService;
@@ -57,5 +58,12 @@ public class UserController implements UserIController {
     public ResponseEntity<Void> deleteUser(@PathVariable("id") int id){
         userService.deleteUser(id);
         return ResponseEntity.ok().build();
+    }
+
+    @Override
+    @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> login(@Valid @RequestBody LoginPostRequestDto loginDto) {
+        String token = userService.login(loginDto.getEmailOrUsername(), loginDto.getPassword());
+        return ResponseEntity.ok(token);
     }
 }

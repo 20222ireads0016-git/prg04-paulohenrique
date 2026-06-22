@@ -11,5 +11,6 @@ public interface UserIService {
     public List<User> findAllUsers();
     public User updateUser(int id, User updatedUser);
     public void deleteUser(int id);
+    public String login(String emailOrUsername, String password);
 
 }

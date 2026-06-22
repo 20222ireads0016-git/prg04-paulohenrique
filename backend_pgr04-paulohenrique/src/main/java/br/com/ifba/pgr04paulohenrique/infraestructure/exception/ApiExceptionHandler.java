@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
@@ -29,7 +30,7 @@ public class ApiExceptionHandler {
         ErrorResponse errorResponse = new ErrorResponse();
         errorResponse.setTimestamp(LocalDateTime.now());
         errorResponse.setStatus(HttpStatus.BAD_REQUEST.value());
-        errorResponse.setError("Campos Invalidos");
+        errorResponse.setError("Campos Inválidos");
         errorResponse.setMessage(ex.getMessage());
         errorResponse.setPath(request.getRequestURI());
 

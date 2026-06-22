@@ -4,15 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e81157b-69fb-4a05-bc7e-d43834db3a52" name="Changes" comment="Adicionando ExceptionHandler">
+    <list default="true" id="8e81157b-69fb-4a05-bc7e-d43834db3a52" name="Changes" comment="Adicionando">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/permission/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/permission/repository/PermissionIRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/role/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/role/repository/RoleIRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/session/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/session/repository/SessionIRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/LoginPostRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserIService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/pgr04paulohenrique/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/infraestructure/entity/PersistenceEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/infraestructure/exception/ApiExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/controller/UserIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/dto/UserPostRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/repository/UserIRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/service/UserIService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/service/UserIService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifba/pgr04paulohenrique/user/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,6 +95,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.ifba.pgr04paulohenrique.user.dto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Pgr04PaulohenriqueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -124,7 +145,8 @@
       <workItem from="1781887016228" duration="452000" />
       <workItem from="1781891031103" duration="912000" />
       <workItem from="1781912602434" duration="20000" />
-      <workItem from="1781963789458" duration="1239000" />
+      <workItem from="1781963789458" duration="1361000" />
+      <workItem from="1782145972887" duration="5058000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -158,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781835348253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adicionando Transactional e Validation">
+      <option name="closed" value="true" />
+      <created>1781965060293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1781965060294</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +198,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adicionando praticamente tudo do backend de user" />
     <MESSAGE value="Adicionando ExceptionHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando ExceptionHandler" />
+    <MESSAGE value="Adicionando Transactional e Validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Transactional e Validation" />
   </component>
 </project>

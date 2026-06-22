@@ -1,12 +1,12 @@
 package br.com.ifba.pgr04paulohenrique.user.entity;
 
 import br.com.ifba.pgr04paulohenrique.infraestructure.entity.PersistenceEntity;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import br.com.ifba.pgr04paulohenrique.role.entity.Role;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @Entity
@@ -28,5 +28,9 @@ public class User extends PersistenceEntity {
 
     @Column (nullable = false)
     private String tel;
+
+    @ManyToMany
+    @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private List<Role> roles;
 
 }
